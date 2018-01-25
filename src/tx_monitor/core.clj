@@ -1,5 +1,6 @@
 (ns tx-monitor.core
-  (:require [clj-http.client :as client]
+  (:require [clojure.tools.cli :refer [parse-opts]]
+            [clj-http.client :as client]
             [cheshire.core :refer :all]
             [postal.core :refer [send-message]])
   (:gen-class))
@@ -37,6 +38,16 @@
                    :body (str "This is an alert that there have not been any CLR "
                               "token transactions in the last hour.")})))
 
+(def cli-options
+  [["-e"
+    :id :email-address]
+   ["-t"
+    :id :num-of-minutes
+    :default 60
+    :parse-fn #(Integer/parseInt %)]])
+
 (defn -main
   [& args]
-  (alert-if-no-tx-in-last-hour))
+  (println (parse-opts args cli-options))
+  ;; (alert-if-no-tx-in-last-hour)
+  )

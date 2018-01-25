@@ -6,7 +6,8 @@
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [clj-http "3.7.0"]
                  [cheshire "5.8.0"]
-                 [com.draines/postal "2.0.2"]]
+                 [com.draines/postal "2.0.2"]
+                 [org.clojure/tools.cli "0.3.5"]]
   :main ^:skip-aot tx-monitor.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})
