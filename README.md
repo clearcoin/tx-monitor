@@ -6,5 +6,5 @@ Periodically check for transactions on the CLR blockchain. Will send email alert
 
 Run the uberjar  [email, number of minutes] :
 
-    $ java -jar tx-monitor-0.1.0-standalone.jar chris@clearcoin.co 60
+    $ java -jar target/uberjar/tx-monitor-0.1.0-standalone.jar chris@clearcoin.co 60
 
