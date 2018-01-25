@@ -1,36 +1,10 @@
 # tx-monitor
 
-FIXME: description
-
-## Installation
-
-Download from http://example.com/FIXME.
+Periodically check for transactions on the CLR blockchain. Will send email alert if there have not been any token transactions in the last hour.
 
 ## Usage
 
-FIXME: explanation
+Run the uberjar  [email, number of minutes] :
 
-    $ java -jar tx-monitor-0.1.0-standalone.jar [args]
+    $ java -jar tx-monitor-0.1.0-standalone.jar chris@clearcoin.co 60
 
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2018 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
