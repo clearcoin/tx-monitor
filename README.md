@@ -1,6 +1,6 @@
 # tx-monitor
 
-Periodically check for transactions on the CLR blockchain. Will send email alert if there have not been any token transactions in the specified number of minutes.
+Periodically check for transactions on the CLR contract. Will send email alert if there have not been any token transactions in the specified number of minutes.
 
 ## Usage
 
