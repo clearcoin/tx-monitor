@@ -1,6 +1,5 @@
 (ns tx-monitor.core
-  (:require [clojure.tools.cli :refer [parse-opts]]
-            [clj-http.client :as client]
+  (:require [clj-http.client :as client]
             [cheshire.core :refer [parse-string]]
             [postal.core :refer [send-message]]))
 
