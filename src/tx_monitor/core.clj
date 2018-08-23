@@ -40,7 +40,7 @@
   (alert-if-no-tx-since-time
    "0x1E26b3D07E57F453caE30F7DDd2f945f5bF3EF33"   ;; Ethereum address to track
    20                                             ;; notify email if no tx in last 20 minutes
-   :api-key "BJ5DTZCCTNSZ634QWKI37BBVHDPF2ZURDN"  ;; API Key for Etherscan (optional)
+   :api-key "12345"                               ;; API Key for Etherscan (optional)
    :gmail-cred {:user "example@gmail.com"         ;; Gmail login info for sending out the email
                 :pass "examplepassword"}
    :notify-email "info@example.com"))             ;; where to send notification email to
