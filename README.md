@@ -1,10 +1,9 @@
 # tx-monitor
 
-Periodically check for transactions on the CLR blockchain. Will send email alert if there have not been any token transactions in the specified number of minutes.
+Monitor an Ethereum address; notify via email if no transactions within given period of time.
 
 ## Usage
 
-Run the uberjar  [email, number of minutes] :
+Run with lein:
 
-    $ java -jar target/uberjar/tx-monitor-0.1.0-standalone.jar chris@clearcoin.co 60
-
+    $ lein run
